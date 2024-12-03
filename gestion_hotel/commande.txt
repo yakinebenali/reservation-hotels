@@ -1,0 +1,2 @@
+>adb shell ls /sdcard/
+>adb push C:\Users\dell\gestion_hotel/server.crt /sdcard/

@@ -1,0 +1,41 @@
+CREATE TABLE hotel (
+  id_hotel INT AUTO_INCREMENT PRIMARY KEY,
+  nom VARCHAR(255) NOT NULL UNIQUE,
+  adresse VARCHAR(255) NOT NULL,
+  ville VARCHAR(100) NOT NULL,
+  logo VARCHAR(255),               
+  image VARCHAR(255),               
+  heure_ouverture TIME NOT NULL,    
+  heure_fermeture TIME NOT NULL,    
+  numero_telephone VARCHAR(20) NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE users (
+    id_user INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    nom VARCHAR(255) NOT NULL,
+    numero_telephone VARCHAR(20),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE reservation_hotel (
+    id_reservation INT AUTO_INCREMENT PRIMARY KEY,
+    id_user INT,
+    id_hotel INT,
+    nom_hotel VARCHAR(255),
+    prix_par_jour DECIMAL(10, 2),
+    total DECIMAL(10, 2),
+    nbre_jours INT,
+    date_reservation DATETIME,
+    statut VARCHAR(50) DEFAULT 'En attente',
+    commentaire TEXT,
+    methode_paiement VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_user) REFERENCES users(id_user),
+    FOREIGN KEY (id_hotel) REFERENCES hotel(id_hotel) 
+) ;
+
