@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Accueil" />
+    <item
+        android:id="@+id/reservations"
+        android:icon="@drawable/reservations"
+        android:title="Réservations" />
+    <item
+        android:id="@+id/connexion"
+        android:icon="@drawable/connexion"
+        android:title="Connexion" />
+</menu>

@@ -1,0 +1,34 @@
+<!-- item_reservation.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/nomHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom de l'hôtel"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dateReservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de réservation"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/statut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statut"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="total"
+        android:textSize="14sp" />
+</LinearLayout>

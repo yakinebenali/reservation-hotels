@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <!-- Barre de navigation avec flèche et nom de l'hôtel -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:layout_margin="0dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/back"
+                android:contentDescription="Retour"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/hotelNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="16dp"
+                android:text="Nom de l'hôtel" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/hotelImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/toolbar"
+        android:contentDescription="@string/hotel_image" />
+
+    <TextView
+        android:id="@+id/hotelAdresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotelImage"
+        android:textSize="16sp"
+        android:textColor="#666"
+        android:layout_marginStart="16dp"
+        android:text="Adresse de l'hôtel" />
+
+    <TextView
+        android:id="@+id/hotelVille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotelAdresse"
+        android:textSize="16sp"
+        android:textColor="#666"
+        android:layout_marginStart="16dp"
+        android:text="Ville de l'hôtel" />
+    <ImageView
+        android:id="@+id/hotel_logo"
+        android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_below="@id/hotelVille"
+    android:layout_centerHorizontal="true"
+    android:scaleType="centerCrop"
+    android:contentDescription="Logo de l'hôtel" />
+
+
+
+    <Button
+        android:id="@+id/reserverButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        android:backgroundTint="@color/blue"
+        android:text="Réserver"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="0dp" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="light_blue">#6DCF71</color>
+
+    <color name="primary">#8C9392</color>
+
+
+    <color name="blue">#6DCF71</color>
+    <color name="accent">#FF4081</color>
+    <color name="textColor">#F39292</color>
+    <color name="overlay">#80000000</color>
+    <color name="primaryColor">#6200EE</color> <!-- Violet profond -->
+    <color name="primaryColorDark">#3700B3</color> <!-- Violet foncé -->
+    <color name="secondaryColor">#03DAC5</color> <!-- Turquoise -->
+    <color name="backgroundColor">#F5F5F5</color> <!-- Gris clair pour le fond -->
+
+    <color name="bottom_nav_active_icon">#FFFFFF</color> <!-- Blanc pour icônes actives -->
+    <color name="bottom_nav_inactive_icon">#B0BEC5</color> <!-- Gris clair pour icônes inactives -->
+    <color name="bottom_nav_active_text">#FFFFFF</color> <!-- Blanc pour texte actif -->
+    <color name="bottom_nav_inactive_text">#CFD8DC</color> <!-- Gris doux pour texte inactif -->
+    <color name="searchBarBackground">#E0E0E0</color> <!-- Gris clair avec contraste suffisant -->
+    <color name="searchTextColor">#212121</color> <!-- Noir pour un bon contraste -->
+
+
+</resources>
